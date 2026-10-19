@@ -1,0 +1,16 @@
+[project]
+name = "namake"
+version = "0.1.0"
+description = "Lazy memo in, polite Japanese business email out. Runs Gemma 3 1B locally."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["llama-cpp-python>=0.3"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+namake = "namake.cli:main"
+
+[tool.setuptools]
+packages = ["namake"]
